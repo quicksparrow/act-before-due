@@ -28,6 +28,13 @@ export function createDemoItems(): TrackedItem[] {
     name: 'Storage subscription', importantDate: dateFromToday(20), billingCycle: 'annual', noticeDays: '1', autoRenew: 'yes', notes: '',
   })
 
+  lease.id = 'demo-lease'
+  passport.id = 'demo-passport'
+  license.id = 'demo-license'
+  utilities.id = 'demo-utilities'
+  insurance.id = 'demo-insurance'
+  subscription.id = 'demo-subscription'
+
   lease.milestones[0].completed = true
   lease.milestones[1].completed = true
   utilities.milestones[0].completed = true
