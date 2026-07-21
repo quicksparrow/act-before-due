@@ -1,9 +1,8 @@
-# ActBeforeDue
+# ActBeforeDue - built with Codex and GPT-5.6
 
 **Track important dates. Know when to act.**
 
-ActBeforeDue is a free, local-first planning app for turning an important date into a practical sequence of earlier actions. It helps people prepare for renewals, expirations, moves, subscriptions, and other deadlines before the last minute.
-
+ActBeforeDue is a free, local-first planning app for turning an important date into a practical sequence of earlier actions. It helps people prepare for renewals, expirations, moves, subscriptions, and other deadlines before the last minute. 
 ## Live demo
 
 Try the app at [act-before-due.vercel.app](https://act-before-due.vercel.app/)
@@ -12,7 +11,7 @@ Try the app at [act-before-due.vercel.app](https://act-before-due.vercel.app/)
 
 ## The problem it solves
 
-Knowing an expiration or renewal date is not always enough. Many real-life deadlines require notice, appointments, documents, comparison shopping, or follow-up well before the final date. ActBeforeDue works backward from the date you provide and gives you an editable action plan, so there is time to prepare instead of reacting late.
+Knowing an expiration or renewal date is not always enough. Many real life deadlines require notice, appointments, documents, comparison shopping, or follow-up well before the final date. ActBeforeDue works backward from the date you provide and gives you an editable action plan, so there is time to prepare instead of reacting late.
 
 ## What ActBeforeDue does
 
@@ -65,6 +64,23 @@ To preview the production output locally after building, run:
 npx vite preview
 ```
 
+## How Codex and GPT-5.6 were used
+
+Codex and GPT-5.6 were used as development assistants during this project. Their role was to accelerate planning, implementation, review, and documentation - not to make product decisions independently or operate the deployed application.
+
+Assisted with:
+
+- Exploring and refining the React user interface and flows for creating, viewing, and editing plans.
+- Implementing and reviewing date planning rules, editable milestone lists, and the local-first IndexedDB data model.
+- Developing backup, CSV, and calendar export functionality, along with supporting validation and user facing copy.
+- Writing and improving automated tests, then running TypeScript, test-suite, production-build, and dependency audit checks during development.
+- Reviewing the repository for public release risks, including exposed credentials, unexpected network activity, unsafe data handling, browser storage, service worker behavior, and deployment security configuration.
+- Drafting and improving project documentation, including this README and the security policy.
+
+The project author reviewed the resulting code and documentation, decided what to keep, and remains responsible for testing, deployment, maintenance, and user support. AI-generated output can contain mistakes, so it was treated as a starting point and validated against the actual application.
+
+Codex and GPT-5.6 do not run in the production app, do not operate the live deployment, and do not receive or retain users' plan data through ActBeforeDue. The deployed app remains local-first: plans are stored in the user's browser unless the user explicitly exports them or chooses to open a Google Calendar link.
+
 ## Technologies used
 
 - [React](https://react.dev/) and [TypeScript](https://www.typescriptlang.org/)
@@ -99,23 +115,6 @@ ActBeforeDue is intentionally local-first:
 Do not enter document numbers, account numbers, passwords, payment details, medical information, security answers, or document copies. Use nicknames and dates only.
 
 For vulnerability reporting, see [SECURITY.md](SECURITY.md). Please do not put sensitive information or exploit details in public issues.
-
-## How Codex and GPT-5.6 were used
-
-Codex and GPT-5.6 were used as development assistants during this project. Their role was to accelerate planning, implementation, review, and documentation - not to make product decisions independently or operate the deployed application.
-
-They assisted with:
-
-- Exploring and refining the React user interface and flows for creating, viewing, and editing plans.
-- Implementing and reviewing date-planning rules, editable milestone lists, and the local-first IndexedDB data model.
-- Developing backup, CSV, and calendar-export functionality, along with supporting validation and user-facing copy.
-- Writing and improving automated tests, then running TypeScript, test-suite, production-build, and dependency-audit checks during development.
-- Reviewing the repository for public-release risks, including exposed credentials, unexpected network activity, unsafe data handling, browser storage, service-worker behavior, and deployment security configuration.
-- Drafting and improving project documentation, including this README and the security policy.
-
-The project author reviewed the resulting code and documentation, decided what to keep, and remains responsible for testing, deployment, maintenance, and user support. AI-generated output can contain mistakes, so it was treated as a starting point and validated against the actual application.
-
-Codex and GPT-5.6 do not run in the production app, do not operate the live deployment, and do not receive or retain users' plan data through ActBeforeDue. The deployed app remains local-first: plans are stored in the user's browser unless the user explicitly exports them or chooses to open a Google Calendar link.
 
 ## License
 
